@@ -13,8 +13,6 @@ cv:
       - institution: De Anza College
         area: Computer science and related fields
         studyType: Student
-        start_date: ""
-        end_date: Present
         highlights:
           - Building foundations in programming, mathematics, and computer science.
           - Exploring artificial intelligence, human-computer interaction, accessibility, and learning tools.

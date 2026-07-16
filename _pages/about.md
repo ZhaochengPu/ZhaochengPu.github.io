@@ -13,7 +13,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -26,3 +26,7 @@ I am currently building foundations in programming, mathematics, and computer sc
 
 - [Personal academic website]({% link _projects/personal-academic-website.md %}) — a minimal academic homepage built with al-folio and GitHub Pages.
 - [Learning notes]({% link _projects/learning-notes.md %}) — short, honest notes that make my progress visible and reusable.
+
+## latest notes
+
+- [Building this site]({% link _posts/2026-07-16-building-this-site.md %}) — why I started with a small academic-style homepage.
