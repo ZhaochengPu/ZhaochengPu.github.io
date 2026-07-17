@@ -9,13 +9,9 @@ cv:
       username: ZhaochengPu
 
   sections:
-    Education:
-      - institution: De Anza College
-        area: Computer science and related fields
-        studyType: Student
-        highlights:
-          - Building foundations in programming, mathematics, and computer science.
-          - Exploring artificial intelligence, human-computer interaction, accessibility, and learning tools.
+    Education and Learning:
+      - label: De Anza College
+        details: Student in computer science and related fields, building foundations in programming, mathematics, and computer science while exploring AI, HCI, accessibility, and learning tools.
 
     Projects:
       - name: Personal Academic Website
