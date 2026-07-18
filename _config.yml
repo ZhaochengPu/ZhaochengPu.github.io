@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Josienne Pu
-first_name: Josienne
+title: Zhaocheng Pu
+first_name: Zhaocheng
 middle_name:
 last_name: Pu
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal academic website of Josienne Pu, a De Anza College student exploring computer science, AI, HCI, and learning tools.
+  Personal academic website of Zhaocheng Pu, a De Anza College student exploring computer science, AI, HCI, and learning tools.
 footer_text: >
   Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>.
 keywords: computer science, artificial intelligence, HCI, learning tools, student, portfolio
@@ -97,7 +97,7 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: /assets/img/zhaocheng-headshot.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -319,7 +319,7 @@ display_categories: [] # these categories will be displayed on the front page of
 
 scholar:
   last_name: [Pu]
-  first_name: [Josienne]
+  first_name: [Zhaocheng]
 
   style: apa
   locale: en
