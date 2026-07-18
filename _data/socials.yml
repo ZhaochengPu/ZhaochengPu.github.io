@@ -1,7 +1,13 @@
 # Public links, displayed in this order on the about page.
 email: zhaocheng.pu.io@gmail.com
 linkedin_username: zhaocheng-pu-375079418
-x_username: zhaocheng_pu
+x_profile:
+  logo: fa-brands fa-x-twitter
+  title: X
+  url: https://x.com/zhaocheng_pu
 github_username: ZhaochengPu
-youtube_id: ZhaochengPu
+youtube_profile:
+  logo: fa-brands fa-youtube
+  title: YouTube
+  url: https://www.youtube.com/@ZhaochengPu
 rss_icon: true
