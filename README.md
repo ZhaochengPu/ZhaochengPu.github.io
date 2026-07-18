@@ -1,4 +1,4 @@
-# Josienne Pu — personal academic website
+# Zhaocheng Pu — personal academic website
 
 This repository contains the source for [zhaochengpu.github.io](https://zhaochengpu.github.io), built with [al-folio](https://github.com/alshedivat/al-folio) and GitHub Pages.
 
@@ -13,8 +13,8 @@ Publications, talks, and teaching pages are intentionally omitted until there is
 
 ## Update later
 
-- Add a profile photo in `assets/img/` and enable the profile block in `_pages/about.md`.
-- Add a public email or LinkedIn profile in `_data/socials.yml` only if you want it visible to everyone.
+- Replace the public photos in `assets/img/` when you want to refresh them.
+- Update public contact and social links in `_data/socials.yml`.
 - Replace the draft CV data in `_data/cv.yml` and optionally enable PDF generation.
 
 ## Local validation

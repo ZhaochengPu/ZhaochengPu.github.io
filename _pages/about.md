@@ -4,6 +4,11 @@ title: about
 permalink: /
 subtitle: Student at <a href="https://www.deanza.edu/">De Anza College</a>
 
+profile:
+  align: right
+  image: zhaocheng-headshot.jpg
+  image_circular: false
+
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
@@ -18,7 +23,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I'm Josienne Pu, a student at De Anza College interested in computer science, artificial intelligence, human-computer interaction, accessibility, and tools that help people learn and think.
+Hi! I'm Zhaocheng Pu, a student at De Anza College interested in computer science, artificial intelligence, human-computer interaction, accessibility, and tools that help people learn and think.
 
 I am currently building foundations in programming, mathematics, and computer science while exploring AI systems and learning tools. This website is a public record of what I build and what I learn; it is intentionally small and will grow with me.
 
@@ -30,3 +35,13 @@ I am currently building foundations in programming, mathematics, and computer sc
 ## latest notes
 
 - [Building this site]({% link _posts/2026-07-16-building-this-site.md %}) — why I started with a small academic-style homepage.
+
+## beyond the screen
+
+<div class="row justify-content-center mt-4">
+  <div class="col-sm-8 col-md-6">
+    {% include figure.liquid loading="lazy" path="assets/img/zhaocheng-life.jpg" title="Zhaocheng enjoying a meal" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+<p class="text-center"><em>A moment outside class and code.</em></p>
