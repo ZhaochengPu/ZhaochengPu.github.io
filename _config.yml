@@ -8,10 +8,10 @@ middle_name:
 last_name: Pu
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal academic website of Zhaocheng Pu, a De Anza College student exploring computer science, AI, HCI, and learning tools.
+  Zhaocheng Pu's personal website: projects and certificates.
 footer_text: >
   Built with <a href="https://github.com/alshedivat/al-folio">al-folio</a> and hosted on <a href="https://pages.github.com/">GitHub Pages</a>.
-keywords: computer science, artificial intelligence, HCI, learning tools, student, portfolio
+keywords: Zhaocheng Pu, personal website, projects, certificates
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌱 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -57,7 +57,7 @@ al_folio:
     allow_remote_loader: true
   features:
     cv:
-      enabled: true
+      enabled: false
     distill:
       enabled: false
   compat:
@@ -81,14 +81,14 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
-search_enabled: true
+footer_fixed: false
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: false
 
 # Dimensions
-max_width: 930px
+max_width: 880px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -97,7 +97,7 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: /assets/img/zhaocheng-headshot.jpg # The site-wide (default for all links) Open Graph preview image
+og_image: https://zhaochengpu.github.io/assets/img/zhaocheng-profile.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -126,7 +126,7 @@ lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
   enabled: true
@@ -195,8 +195,10 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
+  - CLAUDE.md
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
@@ -215,6 +217,8 @@ exclude:
   - purgecss.config.js
   - README.md
   - readme_preview/
+  - requirements.txt
+  - test/
   - gems/
   - migrations/
   - vendor
@@ -345,10 +349,10 @@ scholar:
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
-  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  altmetric: false # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
+  dimensions: false # Dimensions badge (Customization options: https://badge.dimensions.ai/)
+  google_scholar: false # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  inspirehep: false # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
@@ -437,14 +441,14 @@ lazy_loading_images: true # enables lazy loading of images (recommended)
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)
-enable_masonry: true # enables automatic project cards arrangement
-enable_math: true # enables math typesetting (uses MathJax)
+enable_masonry: false # enables automatic project cards arrangement
+enable_math: false # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: false # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
-enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
+enable_progressbar: false # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # -----------------------------------------------------------------------------
@@ -508,7 +512,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
   highlightjs:
     integrity:
       css:
@@ -660,20 +664,4 @@ third_party_libraries:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
+jekyll_get_json: [] # add {data, json} entries here to load external JSON into site.data

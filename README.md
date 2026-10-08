@@ -1,27 +1,29 @@
-# Zhaocheng Pu — personal academic website
+# Zhaocheng Pu — personal website
 
 This repository contains the source for [zhaochengpu.github.io](https://zhaochengpu.github.io), built with [al-folio](https://github.com/alshedivat/al-folio) and GitHub Pages.
 
-The first public version keeps four sections:
+The site has three sections:
 
-- about
-- projects
-- notes
-- CV
+- **About** (`_pages/about.md`): photo, a short hello, links, the latest certificate, and a few photos.
+- **Projects** (`_pages/projects.md`): one card per file in `_projects/`.
+- **Certificates** (`_pages/certificates.md`): one card per entry in `_data/certificates.yml`.
 
-Publications, talks, and teaching pages are intentionally omitted until there is real content for them.
+## How to update
 
-## Update later
+- **Add a certificate:** save the image in `assets/img/certificates/`, then add an entry at the top of `_data/certificates.yml` (title, issuer, date, image, and the verify link). The newest one also shows on the About page.
+- **Add a project:** copy `_projects/personal-website.md`, then change the title, description, status, `importance` (lower numbers show first), and text.
+- **Change the photos:** the profile photo is `assets/img/zhaocheng-profile.jpg`. The "Moments" photos are listed at the top of `_pages/about.md` and live in `assets/img/moments/`. Remove location data from new photos before adding them.
+- **Change the links:** edit `_data/socials.yml`. The buttons on the About page follow its order.
+- **Change colors or fonts:** see the "Site customizations" section at the bottom of `assets/css/main.scss`. That file shadows the theme's stylesheet, so run `bundle exec al-folio upgrade overrides audit` after updating the theme gems.
 
-- Replace the public photos in `assets/img/` when you want to refresh them.
-- Update public contact and social links in `_data/socials.yml`.
-- Replace the draft CV data in `_data/cv.yml` and optionally enable PDF generation.
+Pushing to `main` rebuilds and deploys the site automatically through `.github/workflows/deploy.yml`.
 
-## Local validation
+## Local preview
 
 ```bash
+bundle install
 npm ci
+bundle exec jekyll serve      # open http://localhost:4000
 npm run lint:prettier
-bundle exec al-folio upgrade audit --no-fail
-bundle exec jekyll build
+bundle exec al-folio upgrade audit
 ```
