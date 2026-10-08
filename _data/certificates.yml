@@ -1,0 +1,9 @@
+# Certificates, newest first. The first entry is also featured on the About page.
+# To add one: save the certificate image in assets/img/certificates/ and add a new entry at the top.
+- title: AI Python for Beginners
+  issuer: DeepLearning.AI
+  issuer_icon: si si-deeplearning-ai # optional icon class (Font Awesome or Scholar Icons)
+  date: 2026-10-02
+  image: assets/img/certificates/deeplearning-ai-python-for-beginners.png
+  credential_id: 8101fb5a-46d2-46ac-a384-7126582fb89d
+  url: https://www.deeplearning.ai/certificates/8101fb5a-46d2-46ac-a384-7126582fb89d

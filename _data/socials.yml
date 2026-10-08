@@ -1,13 +1,14 @@
-# Public links, displayed in this order on the about page.
+# Public links, shown as buttons on the About page in this order.
+# Built-in keys (email, linkedin_username, github_username) only need the value.
+# Any other link needs a title, a Font Awesome icon class (logo), and a full url.
 email: zhaocheng.pu.io@gmail.com
-linkedin_username: zhaocheng-pu-375079418
 x_profile:
   logo: fa-brands fa-x-twitter
   title: X
   url: https://x.com/zhaocheng_pu
+linkedin_username: zhaocheng-pu-375079418
 github_username: ZhaochengPu
-youtube_profile:
-  logo: fa-brands fa-youtube
-  title: YouTube
-  url: https://www.youtube.com/@ZhaochengPu
-rss_icon: true
+huggingface_profile:
+  logo: fa-brands fa-hugging-face
+  title: Hugging Face
+  url: https://huggingface.co/ZhaochengPu
